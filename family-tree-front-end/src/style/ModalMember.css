@@ -1,0 +1,119 @@
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, .5);
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    z-index: 2;
+}
+
+.modal-main {
+    width: 25vw;
+    height: 45vh;
+    background-color: #fff;
+    border-radius: 20px;
+}
+
+.modal-header {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    color: #fff;
+    font-size: 1.3em;
+    height: 5vh;
+    display: grid;
+    place-items: center;
+    background-color: rgb(0, 140, 255);
+    font-weight: 600;
+}
+
+.inputs {
+    margin-top: 2vh;
+    padding: 0 2vw;
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    max-height: 30vh;
+}
+
+.inputs::-webkit-scrollbar,
+#select-relatives::-webkit-scrollbar,
+#select-relatives-type::-webkit-scrollbar {
+    display: none;
+}
+
+input:focus, select:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.input {
+    margin: 1.2vh 0;
+    height: 3vh;
+    border: none;
+    border-bottom: 1px solid grey;
+}
+.buttons {
+    margin-top: 2.5vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 2vw;
+}
+.button {
+    font-size: 1.2em;
+    font-weight: 600;
+    
+    cursor: pointer;
+}
+
+.submit {
+    color: rgb(0, 140, 255);
+}
+
+.close {
+    color: rgb(246, 35, 81);
+}
+
+#select-relatives {
+    border: none;
+    margin-bottom: 6vh;
+    min-height: 20vh;
+    max-height: 30vh;
+    overflow-y: scroll;
+}
+
+#select-relatives-type {
+    min-height: 5vh;
+    border: none;
+    height: 10vh;
+}
+
+.selected {
+    background: url("../../img/tick.png") no-repeat;
+    background-size: 15px;
+    background-position: right;
+    /* background-color: rgb(0, 140, 255); */
+    /* color: #fff; */
+
+}
+
+.select-header {
+    color: rgb(0, 140, 255);
+    cursor: pointer;
+    margin: 1vh 0;
+}
+input, select {
+    color: grey;
+    padding: .5vh .5vh;
+}
+
+
+
+.option {
+    font-size: 1.1em;
+    padding: .7vh 0;
+    border-bottom: 1px solid rgb(178, 178, 178);
+}

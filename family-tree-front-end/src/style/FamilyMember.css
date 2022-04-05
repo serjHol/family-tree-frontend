@@ -1,0 +1,48 @@
+
+
+.member-container {
+    background-color: rgb(241, 241, 241);
+    margin: 1em;
+    padding: 1.5em 2em;
+    width: 10vw;
+    border-radius: 20px;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.member-container:hover {
+    background-color: rgb(226, 226, 226);
+}
+.hidden {
+    display: none;
+}
+
+.member-info {
+    margin-bottom: .8em;
+}
+
+.member-info-title, .member-relations-title, .relation-type {
+    margin: .8em 0;
+    font-weight: 500;
+    font-size: 1.1em;
+}
+.buttons-member {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+
+.delete {
+    margin-right: 1vh;
+    color:rgb(204, 46, 81);
+}
+
+.update {
+    margin-left: 1vh;
+    color: rgb(0, 140, 255);
+}
+
+.member-info-row {
+    margin-left: 3em;
+
+}

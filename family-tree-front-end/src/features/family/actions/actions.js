@@ -1,0 +1,7 @@
+export const sagaActions = {
+    FETCH_FAMILY_DATA: "FETCH_FAMILY_DATA",
+    CREATE_USER: "CREATE_USER",
+    DELETE_USER: "DELETE_USER",
+    UPDATE_USER: "UPDATE_USER"
+}
+
