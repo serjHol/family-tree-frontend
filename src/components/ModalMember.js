@@ -115,7 +115,7 @@ const ModalMember = ({member, relations, close}) => {
 
     const RelationType = ({ full_name, id }) => {
         let relationType;
-        const relationById = relations.find(relative => relative.member.id === id);
+        const relationById = relations?.find(relative => relative.member.id === id);
         if (relations && relationById) {
             relationType = relationById.relationType
             if (relationType === "Son" || relationType === "Daughter") {
