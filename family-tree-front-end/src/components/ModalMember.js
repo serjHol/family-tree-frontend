@@ -26,7 +26,7 @@ const ModalMember = ({member, relations, close}) => {
                 }
             )
         )
-    }}, [])
+    }}, [relations])
     const submit = () => {
         const gender = document.getElementById("select-gender").value;
         const first_name = document.getElementById("first-name").value;
@@ -55,7 +55,7 @@ const ModalMember = ({member, relations, close}) => {
         });
         if (relations) {
             const deleteArray = [];
-            relations.map((relation) => {
+            relations.forEach((relation) => {
                 if (!(relativesArray.find((el) => 
                 relation.id === el.relation_id
             )))  deleteArray.push(relation.id)
